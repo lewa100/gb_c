@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
     struct month_temp m_temp[MONTH_SIZE];
     memset(&info, 0, sizeof(info));
     memset(&m_temp, 0, sizeof(m_temp));
-    while ( (rez = getopt(argc,argv,"h:f:m:")) != -1){
+    while ( (rez = getopt(argc,argv,"hf:m:")) != -1){
         switch (rez){
             case 'f':fname = optarg;is_file = 1;break;
             case 'm':m = atoi(optarg), is_month = 1;break;
